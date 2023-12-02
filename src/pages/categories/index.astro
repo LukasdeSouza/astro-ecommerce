@@ -1,0 +1,37 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import data from '../../../public/data.json';
+import '../../../assets/scss/astro-ecommerce.scss';
+import Navbar from '../../components/navbar';
+import CardProduct from '../../components/products/cardProduct';
+import CardCategory from '../../components/products/cardCategory'
+import ProductOverviewGrid from '../../components/products/productOverviewGrid';
+import StoreDoubleColumn from '../../components/store/storeDoubleColumn';
+import ReviewSummaryChart from '../../components/reviews/reviewSummaryChart';
+
+// filter reviews with ID 01
+let productReviews = data.reviews.filter(x => x.productID == "01");
+
+---
+
+<Layout title="Product Page">
+	<main>
+    <Navbar />
+    <div class="container mt-5">
+      <div class="row">
+        <h3 class="mb-4">Produtos por Categoria</h3>
+        {data.categories.slice(0, 4).map(category => 
+          <div class="col-md-6 col-lg-3">
+            <CardCategory
+              thumb_src = {category.thumb_src}
+              collection = {category.collection}
+              title = {category.title}
+            />
+          </div>
+        )}
+      </div>
+      <StoreDoubleColumn />
+    </div>
+  </main>
+
+</Layout>
