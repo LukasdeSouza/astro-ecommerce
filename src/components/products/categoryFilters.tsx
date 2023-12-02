@@ -12,26 +12,26 @@ export default function ProductOverview({
   return (
     <>
       <div className="card card-product card-plain">
-        <div className="d-flex border-bottom pb-3">
+        <div className="d-flex pb-3">
           {(title.length != 0) && 
             <h2 className="mb-3">{title}</h2>
           }
           <div className="d-flex ms-auto align-items-center">
             <div className="dropdown">
               <button className="btn btn-link text-dark mb-0 dropdown-toggle" type="button" id="sortButton" data-bs-toggle="dropdown" aria-expanded="false">
-                Sort
+                Filtrar
               </button>
               <ul className="dropdown-menu" aria-labelledby="sortButton">
-                <li><a className="dropdown-item" href="javascript:;">Most Popular</a></li>
-                <li><a className="dropdown-item" href="javascript:;">Best Rating</a></li>
-                <li><a className="dropdown-item" href="javascript:;">Newest</a></li>
-                <li><a className="dropdown-item" href="javascript:;">Price: Low to High</a></li>
-                <li><a className="dropdown-item" href="javascript:;">Price: High to Low</a></li>
+                <li><a className="dropdown-item" href="javascript:;">Mais Relevantes</a></li>
+                <li><a className="dropdown-item" href="javascript:;">Melhor Avaliados</a></li>
+                <li><a className="dropdown-item" href="javascript:;">Novos</a></li>
+                <li><a className="dropdown-item" href="javascript:;">Preço: Menor para Maior</a></li>
+                <li><a className="dropdown-item" href="javascript:;">Preço: Maior para Menor</a></li>
               </ul>
             </div>
           </div>
         </div>
-        <div className="row mt-5">
+        {/* <div className="row mt-5">
           <div className="col-12 col-md-4">
             <ul className="list-unstyled ms-3">
               <li className="mb-2"><a href="#">Man</a></li>
@@ -174,7 +174,7 @@ export default function ProductOverview({
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   );

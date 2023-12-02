@@ -67,7 +67,7 @@ export default function productOverviewGallery({
           }
           
           <div className="d-flex align-items-center mt-4">
-            <button className="btn btn-dark btn-lg mb-0 me-4">Add to Cart</button>
+            <button className="btn btn-dark btn-lg mb-0 me-4">Adicionar ao Carrinho</button>
             <a href="#favorite">
               <i id="heart1" className="far fa-heart text-2xl" ></i>
             </a>

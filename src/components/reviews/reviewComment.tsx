@@ -17,7 +17,6 @@ export default function ReviewComment({
   return (
     <>
       <div className="d-block my-5">
-        <ReviewRating rating={review.rating}/>
         <p className="text-sm mt-4">{review.comment}</p>
         <div className="d-flex align-items-center">
           <a href="#" className="avatar avatar-lg rounded-circle min-width-50 min-height-50">
@@ -26,9 +25,9 @@ export default function ReviewComment({
           <div className="ms-3">
             <h6 className="mb-0">{review.name}</h6>
             <p className="text-sm mb-2">{review.date}</p>
+            <ReviewRating rating={review.rating} />
           </div>
         </div>
-
       </div>
       <hr className="dark horizontal" />
     </>

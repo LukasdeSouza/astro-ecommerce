@@ -33,9 +33,9 @@ export default function CheckoutSingleItem({
           <div className="col-2">
             <div className="d-block d-md-flex align-items-center">
               <button className="btn btn-link text-dark d-block d-md-none"><i className="fas fa-pen"></i></button>
-              <button className="btn btn-dark btn-sm d-none d-md-block">Edit</button>
+              <button className="btn btn-dark btn-sm d-none d-md-block">Editar</button>
               <button className="btn btn-link text-dark d-block d-md-none"><i className="fas fa-trash"></i></button>
-              <button className="btn btn-link text-dark d-none d-md-block">Remove</button>
+              <button className="btn btn-link text-dark d-none d-md-block">Remover</button>
             </div>
           </div>
         </div>

@@ -22,16 +22,16 @@
           "alt": "fourth_image"
         }
       ],
-      "color": "8 colors",
+      "color": "Ypê",
       "colors": [
         "red", 
         "blue", 
         "green"
       ],
-      "title": "Basic Starter Pack",
-      "price": 399,
-      "description": "That’s the main thing people are controlled by! Thoughts- their perception of themselves!",
-      "full_description": "The time is now for it to be okay to be great. People in this world shun people for being great. For being a bright color. For standing out.",
+      "title": "Desinfetante",
+      "price": 8.99,
+      "description": "1 Litro",
+      "full_description": "Este template é uma representação de como ficará o seu sistema (aberto a alterações).",
       "details": "There’s nothing I really wanted to do in life that I wasn’t able to get good at. That’s my skill. I’m not really specifically talented at anything except for the ability to learn.",
       "highlights": [
         "Oil is a primary source of energy for various sectors, including transportation, industries, and residential use.",
@@ -89,13 +89,13 @@
           "alt": "fourth_image"
         }
       ],
-      "color": "Black",
+      "color": "Camil",
       "colors": ["black", "green", "white"],
-      "title": "Pink Blouse",
-      "price": 1490,
+      "title": "Arroz",
+      "price": 12.25,
       "rating": 5,
       "reviews": 117,
-      "description": "That’s the main thing people are controlled by! Thoughts- their perception of themselves!",
+      "description": "1 Kg",
       "full_description": "The 6-Pack includes two black, two white, and two heather gray Basic Tees. Sign up for our subscription service and be the first to get new, exciting colors, like our upcoming `Charcoal Gray` limited release.",
       "features": [
         "Multiple strap configuration",
@@ -149,11 +149,11 @@
           "alt": "fourth_image"
         }
       ],
-      "color": "Yellow",
+      "color": "Liza",
       "colors": ["SpaceGray"],
-      "title": "Premium Suit",
-      "description": "There’s nothing I really wanted to do in life that I wasn’t able to get good at.",
-      "price": 1399,
+      "title": "Óleo",
+      "description": "1 Litro",
+      "price": 9.99,
       "size": "Large",
       "sizes": {
         "XS": 3,
@@ -174,10 +174,10 @@
       "id": "04",
       "thumb_src": "/images/suit-5.jpg",
       "thumb_alt": "iPhone_thumb",
-      "color": "Blue",
-      "title": "iPhone",
-      "description": "That’s the main thing people are controlled by! Thoughts- their perception of themselves!",
-      "price": 1599,
+      "color": "KiCaldo",
+      "title": "Feijão KiCaldo",
+      "description": "1 Kg",
+      "price": 12.99,
       "size": "Small",
       "sizes": {
         "XS": 3,
@@ -192,23 +192,23 @@
   "categories": [
     {
       "thumb_src": "/images/category1.jpg",
-      "title": "Silk Dresses",
-      "collection": "Pre-fall"
+      "title": "Beleza",
+      "collection": "cuidados pessoais"
     },
     {
       "thumb_src": "/images/category2.jpg",
-      "title": "Suits",
-      "collection": "Designers"
+      "title": "Alimentação",
+      "collection": "produtos"
     },
     {
       "thumb_src": "/images/category3.jpg",
-      "title": "Festival",
-      "collection": "Summer"
+      "title": "Higiene",
+      "collection": "cuidados pessoais"
     },
     {
-      "thumb_src": "/images/category4.jpg",
-      "title": "Showroom",
-      "collection": "Sale"
+      "thumb_src": "/images/category5.jpg",
+      "title": "Limpeza",
+      "collection": "produtos"
     },
     {
       "thumb_src": "/images/product10.jpg",
@@ -217,7 +217,7 @@
     },
     {
       "thumb_src": "/images/category5.jpg",
-      "title": "Chairs by Designers",
+      "title": "Produtos de Limpeza",
       "collection": "Sale"
     },
     {

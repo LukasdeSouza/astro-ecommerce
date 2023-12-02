@@ -11,12 +11,11 @@ export default function ProductSizes({
   return (
     <>
       <div className="mt-4 d-flex justify-content-between align-items-center">
-        <h6 className="mb-0">Size</h6>
-        <a href="#" className="text-body mb-0">Size guide</a>
+        <h6 className="mb-0">Tamanhos</h6>
+        <a href="#" className="text-body mb-0">Guia de Tamanho</a>
       </div>
       <div className="d-flex flex-wrap text-center my-4">
         {Object.entries(sizes).map(([size, amount], i) => 
-
         <div className="mb-3 me-3">
           <div className="form-check">
             {(amount != 0) ?

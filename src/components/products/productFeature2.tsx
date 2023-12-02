@@ -12,7 +12,7 @@ export default function ProductOverview({
 
   return (
     <>
-    <div className="card card-product card-plain">
+    {/* <div className="card card-product card-plain">
       <div className="row mt-5">
         <div className="col-12 ">
           {(title.length != 0) && 
@@ -143,7 +143,7 @@ export default function ProductOverview({
           </div>
         </div>
       </div>
-    </div>
+    </div> */}
     </>
   );
 };

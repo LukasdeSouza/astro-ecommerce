@@ -32,31 +32,40 @@ export default function CardProduct({
             <img className="w-100 h-100 p-4 rounded-top" src={`${import.meta.env.BASE_URL}${thumb_src}`} alt={thumb_alt} />
           </div>
           <div className={classList}>
-            {(color) && 
+            {(color) &&
               <h6 className="text-md mb-1 text-body">{color}</h6>
             }
-            {(title) && 
+            {(title) &&
               <h4 className="font-weight-bold">
                 {title}
               </h4>
             }
 
-            {(description) && 
+            {(description) &&
               <p className="text-body">{description}</p>
             }
-           
-            {(colors) &&
+
+            {/* {(colors) &&
               <ProductBadge colors={colors} />
-            }
-            
-            {(price) && 
+            } */}
+
+            {(price) &&
               <h4 className="mb-0 text-lg mt-1 mb-3">
-                ${price.toLocaleString()}
+                R${price.toLocaleString()}
               </h4>
             }
 
+            <a href={`product/${title.toLowerCase()}`}>
+              <button className='btn btn-dark btn-lg w-100'>
+                Comprar 💳
+              </button>
+            </a>
+            <button className='btn btn-light btn-lg w-100'>
+              Carrinho 🛒
+            </button>
+
             {!(description || colors || color) &&
-              <a href="#" className="font-weight-normal text-body text-sm">Shop Now</a>
+              <a href="#" className="font-weight-normal text-body text-sm">Comprar Agora</a>
             }
           </div>
         </a>

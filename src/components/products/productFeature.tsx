@@ -20,7 +20,7 @@ export default function ProductOverview({
 
   return (
     <>
-    <div className="card card-product card-plain">
+    {/* <div className="card card-product card-plain">
       <div className="row">
         <div className="col-12 col-lg-7 mx-auto text-center">
           {(title.length != 0) && 
@@ -43,7 +43,7 @@ export default function ProductOverview({
           <ProductFeatureImg images={images}/>
         </div>
       </div>
-    </div>
+    </div> */}
     </>
   );
 };

@@ -14,15 +14,21 @@ import PromoSectionLarge from '../components/promo/promoSectionLarge';
 	<main>
     <Navbar />
     <PromoSectionLarge 
-      title={"Collection is here"}
+      title={"SEU COMÉRCIO AQUI"}
       full_description={data.products[0].full_description}  
       pageHeaderBgImg={"../images/bg2.jpg"}
-      pageHeaderMinVh="90vh"
+      pageHeaderMinVh="80vh"
     />
     <div class="container my-5">
       <div class="d-block text-center mb-5">
-        <h3>Shop by category</h3>
-        <a class="text-dark font-weight-bold" href="#">Browse all categories &#62;</a>
+        <h3>Comprar por Categoria</h3>
+          <p>
+            Neste Sistema Web o seu cliente poderá ter acesso ao <b>Institucional</b> da
+            sua empresa, <br> além de poder efetuar <b>compras</b> direto por aqui.
+          </p>
+          <a class="text-dark font-weight-bold" href="#"
+            >Ver Todas as Categorias &#62;</a
+          >
       </div>
       <div class="row mb-5">
         {data.categories.slice(0, 4).map(category => 
@@ -37,9 +43,9 @@ import PromoSectionLarge from '../components/promo/promoSectionLarge';
       </div>
 
     <PromoSectionLarge 
-      title="Basic Starter Pack"
-      full_description={data.products[0].full_description} 
-      pageHeaderBgImg={"../images/bg2.jpg"} 
+      title="Aumente sua Renda"
+      full_description={"Através deste sistema online você pode aumentar as vendas do seus produtos, alcançando mais pessoas, sem preocupar com a entrega!"} 
+      pageHeaderBgImg={"/images/delivery.jpg"} 
       pageHeaderMinVh="50vh"
       pageHeaderRadius="1rem"
     />
@@ -52,10 +58,10 @@ import PromoSectionLarge from '../components/promo/promoSectionLarge';
       />
     </div>
     <div class="mt-5 mb-10">
-      <TestimonialsFade 
+      <!-- <TestimonialsFade 
         pageHeaderBgImg={"https://images.unsplash.com/photo-1519642918688-7e43b19245d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2676&q=80"} 
         pageHeaderMinVh="50vh"
-      />
+      /> -->
     </div>
     
     <Footer />
