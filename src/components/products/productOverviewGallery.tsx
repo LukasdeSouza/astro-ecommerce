@@ -53,7 +53,7 @@ export default function productOverviewGallery({
             {(rating != 0) &&
               <div className="d-flex align-items-center">
                 <ProductRating rating={rating} reviews={reviews} />
-                <span className="ms-2">100 reviews</span>
+                <span className="ms-2">100 Avaliações</span>
               </div>
             }
 

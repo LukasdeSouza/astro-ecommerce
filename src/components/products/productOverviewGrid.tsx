@@ -56,7 +56,7 @@ export default function ProductOverview({
 
               {(rating != 0) &&
                 <>
-                  <h3 className="sr-only">Reviews</h3>
+                  <h3 className="sr-only">Avaliações</h3>
                   <div className="d-flex">
                     <ProductRating rating={4} />
                     <span className="ms-3">{reviews} reviews</span>

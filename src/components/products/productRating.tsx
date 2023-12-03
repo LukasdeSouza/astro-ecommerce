@@ -31,7 +31,7 @@ export default function ProductRating({
       <div className="d-flex align-items-center">
         <p className="font-weight-bold mb-0 me-2">4.5</p>
         {ratingStar}
-        <a href="#" className="ms-3 text-sm font-weight-medium text-body">See all {reviews} reviews</a>
+        <a href="#" className="ms-3 text-sm font-weight-medium text-body">Ver Todas as {reviews} Avaliações</a>
       </div>
     </>
   );
