@@ -24,8 +24,8 @@ const Navbar = () => {
                 Sobre Nós
               </a>
               <ul className="dropdown-menu" aria-labelledby="pagesExample">
-                <li><a className="dropdown-item" href="/astro-ecommerce/landing/">Endereço</a></li>
-                <li><a className="dropdown-item" href="/astro-ecommerce/product/">Fale Conosco</a></li>
+                <li><a className="dropdown-item" href="/astro-ecommerce/about-us">Endereço</a></li>
+                <li><a className="dropdown-item" href="https://api.whatsapp.com/send?phone=553498498" target="_blank">Fale Conosco</a></li>
               </ul>
             </li>
             {/* <li className="nav-item">

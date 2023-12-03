@@ -32,7 +32,9 @@ export default function TestimonialsFade({
               <div className="col-lg-8 col-sm-9 text-center mx-auto">
                 <h1 className="text-white mb-4">{title}</h1>
                 <p className="lead text-white mb-sm-6 mb-4">{full_description}</p>
-                <button className="btn btn-white btn-lg">Saiba Mais</button>
+                <a href="https://api.whatsapp.com/send?phone=553498498" target="_blank">
+                  <button className="btn btn-white btn-lg">Saiba Mais</button>
+                </a>
               </div>
             </div>
           </div>

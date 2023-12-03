@@ -1,0 +1,53 @@
+---
+import Layout from "../layouts/Layout.astro";
+import data from "../../public/data.json";
+import "../../assets/scss/astro-ecommerce.scss";
+import CardCategory from "../components/products/cardCategory";
+import ProductFeature from "../components/products/productFeature";
+import Navbar from "../components/navbar";
+import Footer from "../components/footer";
+import TestimonialsFade from "../components/promo/testimonialsFade";
+import PromoSectionLarge from "../components/promo/promoSectionLarge";
+import StoreNavigationDoubleColumn from "../components/store/storeDoubleColumn";
+---
+
+<Layout title="Landing Page">
+  <main>
+    <Navbar />
+    <div class="container">
+      <div class="d-block text-center my-5">
+        <h3>Sobre Nós</h3>
+        <p>
+          Somos uma empresa presente no mercado desde 20XX, sempre procurando
+          levar excelência para os nosso clientes. <br />
+          Construindo soluções diversificadas de acordo com a necessidade dos negócios.
+        </p>
+        <button class="btn btn-dark">Entrar em Contato</button>
+      </div>
+      <h3>Nosso Endereço</h3>
+      <p>
+        Trabalhamos de maneira online prestando serviço para todo o Brasil mas o
+        nosso endereço físico é: <br />
+        Rua: XXXX Número: xxxxx Bairro: xxxxx
+      </p>
+      <div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3773.257648724264!2d-48.25238622576714!3d-18.964225408960967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94a45abb483032ff%3A0x1f03b2c28d7cc441!2sAv.%20Castela%2C%2024%20-%20Laranjeiras%2C%20Uberl%C3%A2ndia%20-%20MG%2C%2038410-727!5e0!3m2!1sen!2sbr!4v1701624272201!5m2!1sen!2sbr"
+          width="600"
+          height="450"
+          style="border:0;"
+          allowfullscreen
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        >
+        </iframe>
+        <form class="gap-1" onsubmit="">
+          <input class="form-control max-width-300 my-3" type="text" placeholder="email"/>
+          <textarea class="form-control max-width-300" placeholder="Assunto"/>
+          <button class="my-3 btn btn-dark">Enviar mensagem</button>
+        </form>
+      </div>
+      <hr />
+    </div>
+  </main>
+</Layout>

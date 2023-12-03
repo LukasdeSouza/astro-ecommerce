@@ -27,7 +27,7 @@ export default function CardProduct({
   return (
     <>
       <div className="card card-product border mb-5 shadow-xs border-radius-lg">
-        <a href="#">
+        <a href="/checkout">
           <div className="height-350">
             <img className="w-100 h-100 p-4 rounded-top" src={`${import.meta.env.BASE_URL}${thumb_src}`} alt={thumb_alt} />
           </div>
@@ -55,14 +55,12 @@ export default function CardProduct({
               </h4>
             }
 
-            <a href={`product/${title.toLowerCase()}`}>
-              <button className='btn btn-dark btn-lg w-100'>
+            <a className='btn btn-dark btn-lg w-100' href={`/astro-ecommerce/product/${title.toLowerCase()}`}>
                 Comprar 💳
-              </button>
             </a>
-            <button className='btn btn-light btn-lg w-100'>
+            <a href="/astro-ecommerce/shopping-cart" className='btn btn-light btn-lg w-100'>
               Carrinho 🛒
-            </button>
+            </a>
 
             {!(description || colors || color) &&
               <a href="#" className="font-weight-normal text-body text-sm">Comprar Agora</a>

@@ -15,7 +15,7 @@ interface Props {
   details: string;
   rating: number;
   reviews: number;
-  sizes: Map<string,number>
+  sizes: Map<string, number>
 }
 
 export default function ProductOverview({
@@ -33,68 +33,70 @@ export default function ProductOverview({
 
   return (
     <>
-    <div className="card card-product card-plain">
-      <div className="row">
-        {(images?.length != 0) && 
-          <ProductGallery images={images}/>
-        }
-        <div className="col-12 col-lg-6 ps-lg-5">
-          {(title?.length != 0) && 
-            <h2 className="mt-4">{title}</h2>
+      <div className="card card-product card-plain">
+        <div className="row">
+          {(images?.length != 0) &&
+            <ProductGallery images={images} />
           }
-          {(full_description?.length != 0) && 
-            <p className="mb-5">{full_description}</p>
-          }
-
-          <form action="" method="post">
-            {(price?.length != 0) && 
-              <div className="d-flex">
-                <h3 className="font-weight-normal">R${price.toLocaleString()}</h3>
-                <input className="opacity-0" defaultValue={price} />
-              </div>
+          <div className="col-12 col-lg-6 ps-lg-5">
+            {(title?.length != 0) &&
+              <h2 className="mt-4">{title}</h2>
+            }
+            {(full_description?.length != 0) &&
+              <p className="mb-5">{full_description}</p>
             }
 
-            {(rating != 0) && 
-            <>
-              <h3 className="sr-only">Reviews</h3>
-              <div className="d-flex">
-                <ProductRating rating={4} />
-                <span className="ms-3">{reviews} reviews</span>
-              </div>
-            </>
+            <form action="" method="post">
+              {(price?.length != 0) &&
+                <div className="d-flex">
+                  <h3 className="font-weight-normal">R${price.toLocaleString()}</h3>
+                  <input className="opacity-0" defaultValue={price} />
+                </div>
+              }
+
+              {(rating != 0) &&
+                <>
+                  <h3 className="sr-only">Reviews</h3>
+                  <div className="d-flex">
+                    <ProductRating rating={4} />
+                    <span className="ms-3">{reviews} reviews</span>
+                  </div>
+                </>
+              }
+
+              {(sizes.size != 0) &&
+                <ProductSizes sizes={sizes} />
+              }
+              <a className='btn btn-dark btn-lg' href="/astro-ecommerce/shopping-cart">
+                Adicionar ao Carrinho
+              </a>
+            </form>
+          </div>
+        </div>
+
+        <div className="row mt-5">
+          <div className="col-12 col-lg-6">
+            <h4>Descrição do Produto</h4>
+            <p>There’s nothing I really wanted to do in life that I wasn’t able to get good at. That’s my skill. I’m not really specifically talented at anything except for the ability to learn. That’s what I do. That’s what I’m here for. Don’t be afraid to be wrong because you can’t learn anything from a compliment.</p>
+            {(highlights?.length != 0) &&
+              <>
+                <h6>Benefícios</h6>
+                <ul className="text-sm">
+                  {highlights.map(highlight =>
+                    <li className="mb-2">{highlight}</li>
+                  )}
+                </ul>
+              </>
             }
-            
-            {(sizes.size != 0) && 
-              <ProductSizes sizes={sizes}/>
+            {(details?.length != 0) &&
+              <>
+                <h6>Mais sobre o Produto</h6>
+                <p>{details}</p>
+              </>
             }
-            <button className="btn btn-dark btn-lg" type="submit">Adicionar ao Carrinho</button>
-          </form>
+          </div>
         </div>
       </div>
-      
-      <div className="row mt-5">
-        <div className="col-12 col-lg-6">
-          <h4>Descrição do Produto</h4>
-          <p>There’s nothing I really wanted to do in life that I wasn’t able to get good at. That’s my skill. I’m not really specifically talented at anything except for the ability to learn. That’s what I do. That’s what I’m here for. Don’t be afraid to be wrong because you can’t learn anything from a compliment.</p>
-          {(highlights?.length != 0) && 
-           <>
-             <h6>Benefícios</h6>
-              <ul className="text-sm">
-              {highlights.map(highlight => 
-                <li className="mb-2">{highlight}</li>
-              )}
-              </ul>
-           </>
-          }
-           {(details?.length != 0) && 
-            <>
-              <h6>Mais sobre o Produto</h6>
-              <p>{details}</p>
-            </>
-           }
-        </div>
-      </div>
-    </div>
     </>
   );
 };
